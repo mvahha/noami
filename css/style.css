@@ -168,6 +168,9 @@ body {
 	cursor: pointer;
 	display: none;
 }
+.burger-wrp {
+	margin-bottom: 120px;
+}
 
 
 
