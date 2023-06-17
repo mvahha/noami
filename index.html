@@ -393,15 +393,25 @@
     <h2 class="our-products-title subtitle">Наши изделия</h2>
     <div class="cards-products">
       <div class="left-card-product card-product">
-
+        <picture class="product-image">
+          <source
+          media="(max-width: 360px)"
+          srcset="img\shop-item-mobile1.jpg">
+          <source
+          media="(min-width: 641px) and (max-width: 1200px)"
+          srcset="img/shop-item-tablet1.jpg">
+          <source
+          media="(min-width: 1201px)"
+          srcset="img/shop-item-desk1.jpg">
 
         <img class="card-product-img" src="./img/shop-item-desk1.jpg" alt="Подушки на диван">
+      </picture>
 
         <div class="card-product-wrp">
           <div class="card-product-info">
             <h2 class="card-product-title">Подушки на диван</h2>
-            <div class="card-product-text">Набор из двух подушек с модными принтами. Видео о создании <a href="#"
-                class="card-roduct-link">здесь.</a></div>
+            <p class="card-product-text">Набор из двух подушек с модными принтами. Видео о создании <a href="#"
+                class="card-roduct-link">здесь.</a></p>
           </div>
           <div class="card-product-footer">
             <div class="card-product-prices">
@@ -409,48 +419,78 @@
               <p class="new-price">800 ₽</p>
 
             </div>
-            <button class="bye-button">В магазин
-            </button>
+            <a class="bye-button">В магазин
+            </a>
           </div>
         </div>
       </div>
 
       <div class="center-card-product card-product">
-        <img src="./img/shop-item-desk2.jpg" alt="Кукла «Зайчик»">
+        <picture class="product-image">
+          <source
+          media="(max-width: 360px)"
+          srcset="img\shop-item-mobile2.jpg">
+          <source
+          media="(min-width: 641px) and (max-width: 1200px)"
+          srcset="img/shop-item-tablet2.jpg">
+          <source
+          media="(min-width: 1201px)"
+          srcset="img/shop-item-desk2.jpg">
+
+        <img class="card-product-img" src="./img/shop-item-desk2.jpg" alt="Кукла «Зайчик»">
+      </picture>
+
+
+       
         <div class="card-product-wrp">
           <div class="card-product-info">
             <h2 class="card-product-title">Кукла «Зайчик»</h2>
-            <div class="card-product-text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a
+            <p class="card-product-text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a
                 href="#" class="card-roduct-link">весенняя серия постов</a> в блоге и несколько подкастов.</div>
-          </div>
+            </p>
 
           <div class="card-product-footer">
             <div class="card-product-prices">
               <p class="new-price">3500 p</p>
 
             </div>
-            <button class="bye-button">В магазин
-            </button>
+            <a class="bye-button">В магазин
+            </a>
           </div>
         </div>
 
       </div>
       <div class="right-card-product card-product">
-        <img src="./img/shop-item-desk3.jpg" alt="Шестиугольная рамка">
+        <picture class="product-image">
+          <source
+          media="(max-width: 360px)"
+          srcset="img\shop-item-mobile3.jpg">
+          <source
+          media="(min-width: 641px) and (max-width: 1200px)"
+          srcset="img/shop-item-tablet3.jpg">
+          <source
+          media="(min-width: 1201px)"
+          srcset="img/shop-item-desk3.jpg">
+
+        <img class="card-product-img" src="./img/shop-item-desk3.jpg" alt="Шестиугольная рамка">
+      </picture>
+
+
+        
         <div class="card-product-wrp">
           <div class="card-product-info">
             <h2 class="card-product-title">Шестиугольная рамка</h2>
-            <div class="card-product-text">Необычная рамка для украшения дома из видео <a href="#"
+            <p class="card-product-text">Необычная рамка для украшения дома из видео <a href="#"
                 class="card-roduct-link">«Как сделать рамку из подручных средств за 30 минут» </a></div>
-          </div>
+            </p>
           <div class="card-product-footer">
             <div class="card-product-prices">
               <p class="old-price">500 p</p>
               <p class="new-price">400 p</p>
 
             </div>
-            <button class="bye-button">В магазин
-            </button>
+            <a class="bye-button">В магазин
+            </a>
           </div>
         </div>
 
@@ -483,7 +523,7 @@
       <p>Copyright © 2009–2019 City Blog LLC.</p>
     </a>
   </footer>
-  <div class="popup-container hidden">
+  <div class="popup-container hidden ">
     <div class="popup">
       <h2 class="popup-title">ваш фидбек</h2>
       <form action="feedback">
@@ -496,9 +536,9 @@
         </select>
         <div class="radio-wrapper">
           <label class="popup-subtitle">Вы подписаны на e-mail рассылку</label>
-          <input class="radio" type="radio" id="yes">
+          <input class="radio" type="radio" id="yes" name="radio">
           <label class="radio-label" for="yes">Да</label>
-          <input class="radio" type="radio" id="no">
+          <input class="radio" type="radio" id="no" name="radio">
           <label class="radio-label" for="no">Нет</label>
         </div>
 
